@@ -1,0 +1,715 @@
+
+        <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+                  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+        <html>
+        <head>
+            <meta http-equiv="Content-Type"
+                  content="text/html; charset=utf-8" />
+            <title></title>
+            <style type="text/css">
+                table.diff {font-family:Courier; border:1px solid black; margin-left: 3em}
+                .diff_header {background-color:#e0e0e0}
+                td.diff_header {text-align:right}
+                .diff_next {background-color:#c0c0c0}
+                .diff_add {background-color:#aaffaa}
+                .diff_chg {background-color:#ffff77}
+                .diff_sub {background-color:#ffaaaa}
+                h1 { font-size: 1.2em; text-decoration: underline; display: inline-block;}
+                h1:hover {cursor: pointer;}
+                h2 { font-size: 1.1em; margin-left: 1em }
+                pre { margin-left: 3em }
+                .notice { color: red; font-size: 2em; text-decoration underline; font-weight: bold }
+                .disclaimer { font-size: 1.2em; border: solid 1px; padding: .5em; font-family: sans-serif }
+                .arrow {height: 0px; width: 0px; border-top: 10px solid black; border-left: 6px solid transparent; border-right: 6px solid transparent; transform: rotate(270deg); display:inline-block;}
+                .arrow:hover {cursor: pointer;}
+            </style>
+            <script>
+            var output_view = function(elem) {
+                arrow_elem = elem;
+                if (arrow_elem.className != "arrow") {
+                    arrow_elem = elem.nextElementSibling;
+                    if (arrow_elem.className != "arrow") {
+                        return;
+                    }
+                }
+                if (arrow_elem.style.transform != "rotate(0deg)") {
+                    arrow_elem.nextElementSibling.nextElementSibling.style.display = "inline-block";
+                    arrow_elem.style.transform = "rotate(0deg)"
+                } else {
+                    arrow_elem.nextElementSibling.nextElementSibling.style.display = "none";
+                    arrow_elem.style.transform = "rotate(270deg)"
+                }
+            }
+            </script>
+        <body>
+            
+            <h1 onclick="output_view(this)">Success on <code>rhymes.py</code> test 1</h1>
+            <div class="arrow" onclick="output_view(this)"></div>
+            <br>
+            <div class="test-display" style="display: none;">
+            <h2>Input: (<code><a href='test-a3/rhymes-input-01.txt'>test-a3/rhymes-input-01.txt</a></code>)</h2>
+            <table class="diff" rules="groups">
+            <colgroup></colgroup>
+            <tbody><tr><td><pre style='margin:0;'><a href=test-a3/PDict-tiny-01.txt>test-a3/PDict-tiny-01.txt</a></pre>
+<tr><td><pre style='margin:0;'>silly</pre>
+ 
+            </tbody>
+            </table>
+             
+            <div style="display: inline-block; position: relative; margin-top: 20px; margin-left: 5%; width: 90.0%;"><div style="background-color: white; border:3px solid black; position: relative; height: 30px; width:100%; top:2px; z-index:9; text-align: center; left: 50%; transform: translate(-50%, 0); overflow: hidden;"><span style="position: relative; top: 5px; font-family: Courier; font-weight: 600;"><a href=test-a3/PDict-tiny-01.txt>test-a3/PDict-tiny-01.txt</a></span></div>
+            <textarea spellcheck="false" autocapitalize="off" autocorrect="off" autocomplete="off" style="overflow: auto; background-color: #e0e0e0; position: relative; white-space: pre; left: 50%; transform: translate(-50%, 0); width:97%; height: 200px; box-shadow: inset 0px 2px 5px 5px #888888; z-index:8; top:-20px; outline: none; font-family: Courier; border: none; resize: none; padding-left: 1%; box-sizing: border-box; -webkit-box-sizing: border-box;" readonly>
+
+
+SUPERCILIOUS  S UW2 P ER0 S IH1 L IY0 AH0 S
+SICILIAN  S IH0 S IH1 L IY0 AH0 N
+SILEO  S IH1 L IY0 OW0
+LILLY  L IH1 L IY0
+CHILE  CH IH1 L IY0
+CHILI  CH IH1 L IY0
+SILLINESS  S IH1 L IY0 N AH0 S
+SILLY  S IH1 L IY0
+RECORD   R  AH0  K  AO1  R  D
+RECORD   R  IH0  K  AO1  R  D
+SWORD S   AO1   R   D
+</textarea></div>
+            
+            <h2>Output:</h2>
+    <table class="diff" id="difflib_chg_to0__top"
+           cellspacing="0" cellpadding="0" rules="groups" >
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <thead><tr><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a3/rhymes-expected-01.txt'>test-a3/rhymes-expected-01.txt</a></th><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a3/rhymes-actual-01.txt'>test-a3/rhymes-actual-01.txt</a></th></tr></thead>
+        <tbody>
+            <tr><td class="diff_next"><a href="#difflib_chg_to0__top">t</a></td><td class="diff_header" id="from0_1">1</td><td nowrap="nowrap">CHILE</td><td class="diff_next"><a href="#difflib_chg_to0__top">t</a></td><td class="diff_header" id="to0_1">1</td><td nowrap="nowrap">CHILE</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_2">2</td><td nowrap="nowrap">CHILI</td><td class="diff_next"></td><td class="diff_header" id="to0_2">2</td><td nowrap="nowrap">CHILI</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_3">3</td><td nowrap="nowrap">LILLY</td><td class="diff_next"></td><td class="diff_header" id="to0_3">3</td><td nowrap="nowrap">LILLY</td></tr>
+        </tbody>
+    </table></div><br><br>
+            <h1 onclick="output_view(this)">Success on <code>rhymes.py</code> test 2</h1>
+            <div class="arrow" onclick="output_view(this)"></div>
+            <br>
+            <div class="test-display" style="display: none;">
+            <h2>Input: (<code><a href='test-a3/rhymes-input-02.txt'>test-a3/rhymes-input-02.txt</a></code>)</h2>
+            <table class="diff" rules="groups">
+            <colgroup></colgroup>
+            <tbody><tr><td><pre style='margin:0;'><a href=test-a3/PDict-tiny-01.txt>test-a3/PDict-tiny-01.txt</a></pre>
+<tr><td><pre style='margin:0;'>chile</pre>
+ 
+            </tbody>
+            </table>
+             
+            <div style="display: inline-block; position: relative; margin-top: 20px; margin-left: 5%; width: 90.0%;"><div style="background-color: white; border:3px solid black; position: relative; height: 30px; width:100%; top:2px; z-index:9; text-align: center; left: 50%; transform: translate(-50%, 0); overflow: hidden;"><span style="position: relative; top: 5px; font-family: Courier; font-weight: 600;"><a href=test-a3/PDict-tiny-01.txt>test-a3/PDict-tiny-01.txt</a></span></div>
+            <textarea spellcheck="false" autocapitalize="off" autocorrect="off" autocomplete="off" style="overflow: auto; background-color: #e0e0e0; position: relative; white-space: pre; left: 50%; transform: translate(-50%, 0); width:97%; height: 200px; box-shadow: inset 0px 2px 5px 5px #888888; z-index:8; top:-20px; outline: none; font-family: Courier; border: none; resize: none; padding-left: 1%; box-sizing: border-box; -webkit-box-sizing: border-box;" readonly>
+
+
+SUPERCILIOUS  S UW2 P ER0 S IH1 L IY0 AH0 S
+SICILIAN  S IH0 S IH1 L IY0 AH0 N
+SILEO  S IH1 L IY0 OW0
+LILLY  L IH1 L IY0
+CHILE  CH IH1 L IY0
+CHILI  CH IH1 L IY0
+SILLINESS  S IH1 L IY0 N AH0 S
+SILLY  S IH1 L IY0
+RECORD   R  AH0  K  AO1  R  D
+RECORD   R  IH0  K  AO1  R  D
+SWORD S   AO1   R   D
+</textarea></div>
+            
+            <h2>Output:</h2>
+    <table class="diff" id="difflib_chg_to1__top"
+           cellspacing="0" cellpadding="0" rules="groups" >
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <thead><tr><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a3/rhymes-expected-02.txt'>test-a3/rhymes-expected-02.txt</a></th><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a3/rhymes-actual-02.txt'>test-a3/rhymes-actual-02.txt</a></th></tr></thead>
+        <tbody>
+            <tr><td class="diff_next"><a href="#difflib_chg_to1__top">t</a></td><td class="diff_header" id="from1_1">1</td><td nowrap="nowrap">LILLY</td><td class="diff_next"><a href="#difflib_chg_to1__top">t</a></td><td class="diff_header" id="to1_1">1</td><td nowrap="nowrap">LILLY</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from1_2">2</td><td nowrap="nowrap">SILLY</td><td class="diff_next"></td><td class="diff_header" id="to1_2">2</td><td nowrap="nowrap">SILLY</td></tr>
+        </tbody>
+    </table></div><br><br>
+            <h1 onclick="output_view(this)">Success on <code>rhymes.py</code> test 3</h1>
+            <div class="arrow" onclick="output_view(this)"></div>
+            <br>
+            <div class="test-display" style="display: none;">
+            <h2>Input: (<code><a href='test-a3/rhymes-input-03.txt'>test-a3/rhymes-input-03.txt</a></code>)</h2>
+            <table class="diff" rules="groups">
+            <colgroup></colgroup>
+            <tbody><tr><td><pre style='margin:0;'><a href=test-a3/PDict-tiny-02.txt>test-a3/PDict-tiny-02.txt</a></pre>
+<tr><td><pre style='margin:0;'>sour</pre>
+ 
+            </tbody>
+            </table>
+             
+            <div style="display: inline-block; position: relative; margin-top: 20px; margin-left: 5%; width: 90.0%;"><div style="background-color: white; border:3px solid black; position: relative; height: 30px; width:100%; top:2px; z-index:9; text-align: center; left: 50%; transform: translate(-50%, 0); overflow: hidden;"><span style="position: relative; top: 5px; font-family: Courier; font-weight: 600;"><a href=test-a3/PDict-tiny-02.txt>test-a3/PDict-tiny-02.txt</a></span></div>
+            <textarea spellcheck="false" autocapitalize="off" autocorrect="off" autocomplete="off" style="overflow: auto; background-color: #e0e0e0; position: relative; white-space: pre; left: 50%; transform: translate(-50%, 0); width:97%; height: 200px; box-shadow: inset 0px 2px 5px 5px #888888; z-index:8; top:-20px; outline: none; font-family: Courier; border: none; resize: none; padding-left: 1%; box-sizing: border-box; -webkit-box-sizing: border-box;" readonly>
+
+
+RESTORER  R IH0 S T AO1 R ER0
+RESTORES  R IH0 S T AO1 R Z
+STORE  S T AO1 R
+STOREKEEPER  S T AO1 R K IY2 P ER0
+BACKDOORS  B AE1 K D AO2 R Z
+DOOR  D AO1 R
+DOUR  D AW1 ER0
+DOUR  D AW1 R
+GADOURY  G AE1 D UH0 R IY0
+N'DOUR  N D AW1 R
+ODOUR  OW1 D ER0
+BOER  B AO1 R
+DUFOUR  D AH0 F UH1 R
+FOUR  F AO1 R
+FOURTOU  F AO0 R T UW1
+TELFOUR  T EH1 L F ER0
+THREE-HOUR  TH R IY2 AW1 ER0
+TOWER  T AW1 ER0
+SOUR  S AW1 ER0
+SHOWER  SH AW1 ER0
+OVERPOWER  OW2 V ER0 P AW1 ER0
+</textarea></div>
+            
+            <h2>Output:</h2>
+    <table class="diff" id="difflib_chg_to2__top"
+           cellspacing="0" cellpadding="0" rules="groups" >
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <thead><tr><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a3/rhymes-expected-03.txt'>test-a3/rhymes-expected-03.txt</a></th><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a3/rhymes-actual-03.txt'>test-a3/rhymes-actual-03.txt</a></th></tr></thead>
+        <tbody>
+            <tr><td class="diff_next"><a href="#difflib_chg_to2__top">t</a></td><td class="diff_header" id="from2_1">1</td><td nowrap="nowrap">DOUR</td><td class="diff_next"><a href="#difflib_chg_to2__top">t</a></td><td class="diff_header" id="to2_1">1</td><td nowrap="nowrap">DOUR</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from2_2">2</td><td nowrap="nowrap">OVERPOWER</td><td class="diff_next"></td><td class="diff_header" id="to2_2">2</td><td nowrap="nowrap">OVERPOWER</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from2_3">3</td><td nowrap="nowrap">SHOWER</td><td class="diff_next"></td><td class="diff_header" id="to2_3">3</td><td nowrap="nowrap">SHOWER</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from2_4">4</td><td nowrap="nowrap">THREE-HOUR</td><td class="diff_next"></td><td class="diff_header" id="to2_4">4</td><td nowrap="nowrap">THREE-HOUR</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from2_5">5</td><td nowrap="nowrap">TOWER</td><td class="diff_next"></td><td class="diff_header" id="to2_5">5</td><td nowrap="nowrap">TOWER</td></tr>
+        </tbody>
+    </table></div><br><br>
+            <h1 onclick="output_view(this)">Success on <code>rhymes.py</code> test 4</h1>
+            <div class="arrow" onclick="output_view(this)"></div>
+            <br>
+            <div class="test-display" style="display: none;">
+            <h2>Input: (<code><a href='test-a3/rhymes-input-04.txt'>test-a3/rhymes-input-04.txt</a></code>)</h2>
+            <table class="diff" rules="groups">
+            <colgroup></colgroup>
+            <tbody><tr><td><pre style='margin:0;'><a href=test-a3/PDict-tiny-02.txt>test-a3/PDict-tiny-02.txt</a></pre>
+<tr><td><pre style='margin:0;'>four</pre>
+ 
+            </tbody>
+            </table>
+             
+            <div style="display: inline-block; position: relative; margin-top: 20px; margin-left: 5%; width: 90.0%;"><div style="background-color: white; border:3px solid black; position: relative; height: 30px; width:100%; top:2px; z-index:9; text-align: center; left: 50%; transform: translate(-50%, 0); overflow: hidden;"><span style="position: relative; top: 5px; font-family: Courier; font-weight: 600;"><a href=test-a3/PDict-tiny-02.txt>test-a3/PDict-tiny-02.txt</a></span></div>
+            <textarea spellcheck="false" autocapitalize="off" autocorrect="off" autocomplete="off" style="overflow: auto; background-color: #e0e0e0; position: relative; white-space: pre; left: 50%; transform: translate(-50%, 0); width:97%; height: 200px; box-shadow: inset 0px 2px 5px 5px #888888; z-index:8; top:-20px; outline: none; font-family: Courier; border: none; resize: none; padding-left: 1%; box-sizing: border-box; -webkit-box-sizing: border-box;" readonly>
+
+
+RESTORER  R IH0 S T AO1 R ER0
+RESTORES  R IH0 S T AO1 R Z
+STORE  S T AO1 R
+STOREKEEPER  S T AO1 R K IY2 P ER0
+BACKDOORS  B AE1 K D AO2 R Z
+DOOR  D AO1 R
+DOUR  D AW1 ER0
+DOUR  D AW1 R
+GADOURY  G AE1 D UH0 R IY0
+N'DOUR  N D AW1 R
+ODOUR  OW1 D ER0
+BOER  B AO1 R
+DUFOUR  D AH0 F UH1 R
+FOUR  F AO1 R
+FOURTOU  F AO0 R T UW1
+TELFOUR  T EH1 L F ER0
+THREE-HOUR  TH R IY2 AW1 ER0
+TOWER  T AW1 ER0
+SOUR  S AW1 ER0
+SHOWER  SH AW1 ER0
+OVERPOWER  OW2 V ER0 P AW1 ER0
+</textarea></div>
+            
+            <h2>Output:</h2>
+    <table class="diff" id="difflib_chg_to3__top"
+           cellspacing="0" cellpadding="0" rules="groups" >
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <thead><tr><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a3/rhymes-expected-04.txt'>test-a3/rhymes-expected-04.txt</a></th><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a3/rhymes-actual-04.txt'>test-a3/rhymes-actual-04.txt</a></th></tr></thead>
+        <tbody>
+            <tr><td class="diff_next"><a href="#difflib_chg_to3__top">t</a></td><td class="diff_header" id="from3_1">1</td><td nowrap="nowrap">BOER</td><td class="diff_next"><a href="#difflib_chg_to3__top">t</a></td><td class="diff_header" id="to3_1">1</td><td nowrap="nowrap">BOER</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from3_2">2</td><td nowrap="nowrap">DOOR</td><td class="diff_next"></td><td class="diff_header" id="to3_2">2</td><td nowrap="nowrap">DOOR</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from3_3">3</td><td nowrap="nowrap">STORE</td><td class="diff_next"></td><td class="diff_header" id="to3_3">3</td><td nowrap="nowrap">STORE</td></tr>
+        </tbody>
+    </table></div><br><br>
+            <h1 onclick="output_view(this)">Success on <code>rhymes.py</code> test 5</h1>
+            <div class="arrow" onclick="output_view(this)"></div>
+            <br>
+            <div class="test-display" style="display: none;">
+            <h2>Input: (<code><a href='test-a3/rhymes-input-05.txt'>test-a3/rhymes-input-05.txt</a></code>)</h2>
+            <table class="diff" rules="groups">
+            <colgroup></colgroup>
+            <tbody><tr><td><pre style='margin:0;'><a href=test-a3/PronunciationDictionary.txt>test-a3/PronunciationDictionary.txt</a></pre>
+<tr><td><pre style='margin:0;'>blister</pre>
+ 
+            </tbody>
+            </table>
+             
+            <div style="display: inline-block; position: relative; margin-top: 20px; margin-left: 5%; width: 90.0%;"><div style="background-color: white; border:3px solid black; position: relative; height: 30px; width:100%; top:2px; z-index:9; text-align: center; left: 50%; transform: translate(-50%, 0); overflow: hidden;"><span style="position: relative; top: 5px; font-family: Courier; font-weight: 600;"><a href=test-a3/PronunciationDictionary.txt>test-a3/PronunciationDictionary.txt</a></span></div>
+            <textarea spellcheck="false" autocapitalize="off" autocorrect="off" autocomplete="off" style="overflow: auto; background-color: #e0e0e0; position: relative; white-space: pre; left: 50%; transform: translate(-50%, 0); width:97%; height: 200px; box-shadow: inset 0px 2px 5px 5px #888888; z-index:8; top:-20px; outline: none; font-family: Courier; border: none; resize: none; padding-left: 1%; box-sizing: border-box; -webkit-box-sizing: border-box;" readonly>
+
+
+'TIL  T IH1 L
+'TIS  T IH1 Z
+'TWAS  T W AH1 Z
+3-D  TH R IY1 D IY2
+3D  TH R IY1 D IY2
+A  AH0
+A  EY1
+A'S  EY1 Z
+A.  EY1
+A.'S  EY1 Z
+A.S  EY1 Z
+AA  EY2 EY1
+AAA  T R IH2 P AH0 L EY1
+AABERG  AA1 B ER0 G
+AACHEN  AA1 K AH0 N
+AACHENER  AA1 K AH0 N ER0
+AAH  AA1
+AAKER  AA1 K ER0
+AALIYAH  AA2 L IY1 AA2
+AALSETH  AA1 L S EH0 TH
+AAMODT  AA1 M AH0 T
+AANCOR  AA1 N K AO2 R
+AARDEMA  AA0 R D EH1 M AH0
+AARDVARK  AA1 R D V AA2 R K
+AARDVARKS  AA1 R D V AA2 R K S
+AARGH  AA1 R G
+AARON  EH1 R AH0 N
+AARON'S  EH1 R AH0 N Z
+AARONS  EH1 R AH0 N Z
+AARONSON  EH1 R AH0 N S AH0 N
+AARONSON  AA1 R AH0 N S AH0 N
+AARONSON'S  EH1 R AH0 N S AH0 N Z
+AARONSON'S  AA1 R AH0 N S AH0 N Z
+AARTI  AA1 R T IY2
+AASE  AA1 S
+AASEN  AA1 S AH0 N
+AB  AE1 B
+ABA  EY2 B IY2 EY1
+ABABA  AH0 B AA1 B AH0
+ABABA  AA1 B AH0 B AH0
+ABACHA  AE1 B AH0 K AH0
+ABACK  AH0 B AE1 K
+ABACO  AE1 B AH0 K OW2
+ABACUS  AE1 B AH0 K AH0 S
+ABAD  AH0 B AA1 D
+ABADAKA  AH0 B AE1 D AH0 K AH0
+ABADI  AH0 B AE1 D IY0
+ABADIE  AH0 B AE1 D IY0
+ABAIR  AH0 B EH1 R
+ABALKIN  AH0 B AA1 L K IH0 N
+ABALONE  AE2 B AH0 L OW1 N IY0
+ABALONES  AE2 B AH0 L OW1 N IY0 Z
+ABALOS  AA0 B AA1 L OW0 Z
+ABANDON  AH0 B AE1 N D AH0 N
+ABANDONED  AH0 B AE1 N D AH0 N D
+ABANDONING  AH0 B AE1 N D AH0 N IH0 NG
+ABANDONMENT  AH0 B AE1 N D AH0 N M AH0 N T
+ABANDONMENTS  AH0 B AE1 N D AH0 N M AH0 N T S
+ABANDONS  AH0 B AE1 N D AH0 N Z
+ABANTO  AH0 B AE1 N T OW0
+ABARCA  AH0 B AA1 R K AH0
+ABARE  AA0 B AA1 R IY0
+ABASCAL  AE1 B AH0 S K AH0 L
+ABASH  AH0 B AE1 SH
+ABASHED  AH0 B AE1 SH T
+ABASIA  AH0 B EY1 ZH Y AH0
+ABATE  AH0 B EY1 T
+ABATED  AH0 B EY1 T IH0 D
+ABATEMENT  AH0 B EY1 T M AH0 N T
+ABATEMENTS  AH0 B EY1 T M AH0 N T S
+ABATES  AH0 B EY1 T S
+ABATING  AH0 B EY1 T IH0 NG
+ABBA  AE1 B AH0
+ABBADO  AH0 B AA1 D OW0
+ABBAS  AH0 B AA1 S
+ABBASI  AA0 B AA1 S IY0
+ABBATE  AA1 B EY0 T
+ABBATIELLO  AA0 B AA0 T IY0 EH1 L OW0
+ABBE  AE1 B IY0
+ABBE  AE0 B EY1
+ABBENHAUS  AE1 B AH0 N HH AW2 S
+ABBETT  AH0 B EH1 T
+ABBEVILLE  AE1 B V IH0 L
+ABBEY  AE1 B IY0
+ABBEY'S  AE1 B IY0 Z
+ABBIE  AE1 B IY0
+ABBITT  AE1 B IH0 T
+ABBOT  AE1 B AH0 T
+ABBOTT  AE1 B AH0 T
+ABBOTT'S  AE1 B AH0 T S
+ABBOUD  AH0 B UW1 D
+ABBOUD  AH0 B AW1 D
+ABBREVIATE  AH0 B R IY1 V IY0 EY2 T
+ABBREVIATED  AH0 B R IY1 V IY0 EY2 T IH0 D
+ABBREVIATES  AH0 B R IY1 V IY0 EY2 T S
+ABBREVIATING  AH0 B R IY1 V IY0 EY2 T IH0 NG
+ABBREVIATION  AH0 B R IY2 V IY0 EY1 SH AH0 N
+ABBREVIATIONS  AH0 B R IY2 V IY0 EY1 SH AH0 N Z
+ABBRUZZESE  AA0 B R UW0 T S EY1 Z IY0
+ABBS  AE1 B Z
+ABBY  AE1 B IY0
+ABC  EY1 B IY2 S IY2
+ABC'S  EY1 B IY2 S IY2 Z
+ABCO  AE1 B K OW0
+ABCOTEK  AE1 B K OW0 T EH2 K
+ABCS  EY1 B IY2 S IY2 Z
+ABDALLA  AE2 B D AE1 L AH0
+ABDALLAH  AE2 B D AE1 L AH0
+ABDEL  AE1 B D EH2 L
+ABDELLA  AE2 B D EH1 L AH0
+ABDICATE  AE1 B D AH0 K EY2 T
+ABDICATED  AE1 B D AH0 K EY2 T AH0 D
+ABDICATES  AE1 B D AH0 K EY2 T S
+ABDICATING  AE1 B D IH0 K EY2 T IH0 NG
+ABDICATION  AE2 B D IH0 K EY1 SH AH0 N
+ABDNOR  AE1 B D N ER0
+ABDO  AE1 B D OW0
+ABDOLLAH  AE2 B D AA1 L AH0
+ABDOMEN  AE0 B D OW1 M AH0 N
+ABDOMEN  AE1 B D AH0 M AH0 N
+ABDOMINAL  AE0 B D AA1 M AH0 N AH0 L
+ABDOMINAL  AH0 B D AA1 M AH0 N AH0 L
+ABDUCT  AE0 B D AH1 K T
+ABDUCTED  AE0 B D AH1 K T IH0 D
+ABDUCTED  AH0 B D AH1 K T IH0 D
+ABDUCTEE  AE0 B D AH2 K T IY1
+ABDUCTEES  AE0 B D AH2 K T IY1 Z
+ABDUCTING  AE0 B D AH1 K T IH0 NG
+ABDUCTING  AH0 B D AH1 K T IH0 NG
+ABDUCTION  AE0 B D AH1 K SH AH0 N
+ABDUCTION  AH0 B D AH1 K SH AH0 N
+ABDUCTIONS  AE0 B D AH1 K SH AH0 N Z
+ABDUCTIONS  AH0 B D AH1 K SH AH0 N Z
+ABDUCTOR  AE0 B D AH1 K T ER0
+ABDUCTOR  AH0 B D AH1 K T ER0
+ABDUCTORS  AE0 B D AH1 K T ER0 Z
+ABDUCTORS  AH0 B D AH1 K T ER0 Z
+ABDUCTS  AE0 B D AH1 K T S
+ABDUL  AE0 B D UW1 L
+ABDULAZIZ  AE0 B D UW2 L AH0 Z IY1 Z
+ABDULLA  AA0 B D UW1 L AH0
+ABDULLAH  AE2 B D AH1 L AH0
+ABE  EY1 B
+ABED  AH0 B EH1 D
+ABEDI  AH0 B EH1 D IY0
+ABEE  AH0 B IY1
+ABEL  EY1 B AH0 L
+ABELA  AA0 B EH1 L AH0
+ABELARD  AE1 B IH0 L ER0 D
+ABELE  AH0 B EH1 L
+ABELES  AH0 B EH1 L Z
+ABELES  EY1 B AH0 L IY2 Z
+ABELL  EY1 B AH0 L
+ABELLA  AH0 B EH1 L AH0
+ABELN  AE1 B IH0 L N
+ABELOW  AE1 B AH0 L OW0
+ABELS  EY1 B AH0 L Z
+ABELSON  AE1 B IH0 L S AH0 N
+ABEND  AE1 B EH0 N D
+ABEND  AH0 B EH1 N D
+ABENDROTH  AE1 B IH0 N D R AO0 TH
+ABER  EY1 B ER0
+ABERCROMBIE  AE2 B ER0 K R AA1 M B IY0
+ABERDEEN  AE1 B ER0 D IY2 N
+ABERFORD  EY1 B ER0 F ER0 D
+ABERG  AE1 B ER0 G
+ABERLE  AE1 B ER0 AH0 L
+ABERLE  AE1 B ER0 L
+ABERMIN  AE1 B ER0 M IH0 N
+ABERNATHY  AE1 B ER0 N AE2 TH IY0
+ABERNETHY  AE1 B ER0 N EH2 TH IY0
+ABERRANT  AE0 B EH1 R AH0 N T
+ABERRATION  AE2 B ER0 EY1 SH AH0 N
+ABERRATIONAL  AE2 B ER0 EY1 SH AH0 N AH0 L
+ABERRATIONS  AE2 B ER0 EY1 SH AH0 N Z
+ABERT  AE1 B ER0 T
+ABET  AH0 B EH1 T
+ABETTED  AH0 B EH1 T IH0 D
+ABETTING  AH0 B EH1 T IH0 NG
+ABEX  EY1 B EH0 K S
+ABEYANCE  AH0 B EY1 AH0 N S
+ABEYTA  AA0 B EY1 T AH0
+ABHOR  AE0 B HH AO1 R
+ABHORRED  AH0 B HH AO1 R D
+ABHORRENCE  AH0 B HH AO1 R AH0 N S
+ABHORRENT  AE0 B HH AO1 R AH0 N T
+ABHORS  AH0 B HH AO1 R Z
+ABIAM  EY1 B IY0 AH0 M
+ABIAM'S  EY1 B IY0 AH0 M Z
+ABID  EY1 B IH0 D
+ABIDE  AH0 B AY1 D
+ABIDED  AH0 B AY1 D IH0 D
+ABIDES  AH0 B AY1 D Z
+ABIDING  AH0 B AY1 D IH0 NG
+ABIDJAN  AE0 B IH0 JH AA1 N
+ABIE  AE1 B IY0
+[...3624638 additional characters not shown...]</textarea></div>
+            
+            <h2>Output:</h2>
+    <table class="diff" id="difflib_chg_to4__top"
+           cellspacing="0" cellpadding="0" rules="groups" >
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <thead><tr><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a3/rhymes-expected-05.txt'>test-a3/rhymes-expected-05.txt</a></th><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a3/rhymes-actual-05.txt'>test-a3/rhymes-actual-05.txt</a></th></tr></thead>
+        <tbody>
+            <tr><td class="diff_next"><a href="#difflib_chg_to4__top">t</a></td><td class="diff_header" id="from4_1">1</td><td nowrap="nowrap">BRISTER</td><td class="diff_next"><a href="#difflib_chg_to4__top">t</a></td><td class="diff_header" id="to4_1">1</td><td nowrap="nowrap">BRISTER</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from4_2">2</td><td nowrap="nowrap">FISTER</td><td class="diff_next"></td><td class="diff_header" id="to4_2">2</td><td nowrap="nowrap">FISTER</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from4_3">3</td><td nowrap="nowrap">HYSTER</td><td class="diff_next"></td><td class="diff_header" id="to4_3">3</td><td nowrap="nowrap">HYSTER</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from4_4">4</td><td nowrap="nowrap">ISTRE</td><td class="diff_next"></td><td class="diff_header" id="to4_4">4</td><td nowrap="nowrap">ISTRE</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from4_5">5</td><td nowrap="nowrap">KISTER</td><td class="diff_next"></td><td class="diff_header" id="to4_5">5</td><td nowrap="nowrap">KISTER</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from4_6">6</td><td nowrap="nowrap">MISTER</td><td class="diff_next"></td><td class="diff_header" id="to4_6">6</td><td nowrap="nowrap">MISTER</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from4_7">7</td><td nowrap="nowrap">MR</td><td class="diff_next"></td><td class="diff_header" id="to4_7">7</td><td nowrap="nowrap">MR</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from4_8">8</td><td nowrap="nowrap">MR.</td><td class="diff_next"></td><td class="diff_header" id="to4_8">8</td><td nowrap="nowrap">MR.</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from4_9">9</td><td nowrap="nowrap">PFISTER</td><td class="diff_next"></td><td class="diff_header" id="to4_9">9</td><td nowrap="nowrap">PFISTER</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from4_10">10</td><td nowrap="nowrap">PISTOR</td><td class="diff_next"></td><td class="diff_header" id="to4_10">10</td><td nowrap="nowrap">PISTOR</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from4_11">11</td><td nowrap="nowrap">RISTER</td><td class="diff_next"></td><td class="diff_header" id="to4_11">11</td><td nowrap="nowrap">RISTER</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from4_12">12</td><td nowrap="nowrap">SISTER</td><td class="diff_next"></td><td class="diff_header" id="to4_12">12</td><td nowrap="nowrap">SISTER</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from4_13">13</td><td nowrap="nowrap">SR</td><td class="diff_next"></td><td class="diff_header" id="to4_13">13</td><td nowrap="nowrap">SR</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from4_14">14</td><td nowrap="nowrap">TRANSISTOR</td><td class="diff_next"></td><td class="diff_header" id="to4_14">14</td><td nowrap="nowrap">TRANSISTOR</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from4_15">15</td><td nowrap="nowrap">TWISTER</td><td class="diff_next"></td><td class="diff_header" id="to4_15">15</td><td nowrap="nowrap">TWISTER</td></tr>
+        </tbody>
+    </table></div><br><br>
+            <h1 onclick="output_view(this)">Success on <code>rhymes.py</code> test 6</h1>
+            <div class="arrow" onclick="output_view(this)"></div>
+            <br>
+            <div class="test-display" style="display: none;">
+            <h2>Input: (<code><a href='test-a3/rhymes-input-06.txt'>test-a3/rhymes-input-06.txt</a></code>)</h2>
+            <table class="diff" rules="groups">
+            <colgroup></colgroup>
+            <tbody><tr><td><pre style='margin:0;'><a href=test-a3/PronunciationDictionary.txt>test-a3/PronunciationDictionary.txt</a></pre>
+<tr><td><pre style='margin:0;'>eraser</pre>
+ 
+            </tbody>
+            </table>
+             
+            <div style="display: inline-block; position: relative; margin-top: 20px; margin-left: 5%; width: 90.0%;"><div style="background-color: white; border:3px solid black; position: relative; height: 30px; width:100%; top:2px; z-index:9; text-align: center; left: 50%; transform: translate(-50%, 0); overflow: hidden;"><span style="position: relative; top: 5px; font-family: Courier; font-weight: 600;"><a href=test-a3/PronunciationDictionary.txt>test-a3/PronunciationDictionary.txt</a></span></div>
+            <textarea spellcheck="false" autocapitalize="off" autocorrect="off" autocomplete="off" style="overflow: auto; background-color: #e0e0e0; position: relative; white-space: pre; left: 50%; transform: translate(-50%, 0); width:97%; height: 200px; box-shadow: inset 0px 2px 5px 5px #888888; z-index:8; top:-20px; outline: none; font-family: Courier; border: none; resize: none; padding-left: 1%; box-sizing: border-box; -webkit-box-sizing: border-box;" readonly>
+
+
+'TIL  T IH1 L
+'TIS  T IH1 Z
+'TWAS  T W AH1 Z
+3-D  TH R IY1 D IY2
+3D  TH R IY1 D IY2
+A  AH0
+A  EY1
+A'S  EY1 Z
+A.  EY1
+A.'S  EY1 Z
+A.S  EY1 Z
+AA  EY2 EY1
+AAA  T R IH2 P AH0 L EY1
+AABERG  AA1 B ER0 G
+AACHEN  AA1 K AH0 N
+AACHENER  AA1 K AH0 N ER0
+AAH  AA1
+AAKER  AA1 K ER0
+AALIYAH  AA2 L IY1 AA2
+AALSETH  AA1 L S EH0 TH
+AAMODT  AA1 M AH0 T
+AANCOR  AA1 N K AO2 R
+AARDEMA  AA0 R D EH1 M AH0
+AARDVARK  AA1 R D V AA2 R K
+AARDVARKS  AA1 R D V AA2 R K S
+AARGH  AA1 R G
+AARON  EH1 R AH0 N
+AARON'S  EH1 R AH0 N Z
+AARONS  EH1 R AH0 N Z
+AARONSON  EH1 R AH0 N S AH0 N
+AARONSON  AA1 R AH0 N S AH0 N
+AARONSON'S  EH1 R AH0 N S AH0 N Z
+AARONSON'S  AA1 R AH0 N S AH0 N Z
+AARTI  AA1 R T IY2
+AASE  AA1 S
+AASEN  AA1 S AH0 N
+AB  AE1 B
+ABA  EY2 B IY2 EY1
+ABABA  AH0 B AA1 B AH0
+ABABA  AA1 B AH0 B AH0
+ABACHA  AE1 B AH0 K AH0
+ABACK  AH0 B AE1 K
+ABACO  AE1 B AH0 K OW2
+ABACUS  AE1 B AH0 K AH0 S
+ABAD  AH0 B AA1 D
+ABADAKA  AH0 B AE1 D AH0 K AH0
+ABADI  AH0 B AE1 D IY0
+ABADIE  AH0 B AE1 D IY0
+ABAIR  AH0 B EH1 R
+ABALKIN  AH0 B AA1 L K IH0 N
+ABALONE  AE2 B AH0 L OW1 N IY0
+ABALONES  AE2 B AH0 L OW1 N IY0 Z
+ABALOS  AA0 B AA1 L OW0 Z
+ABANDON  AH0 B AE1 N D AH0 N
+ABANDONED  AH0 B AE1 N D AH0 N D
+ABANDONING  AH0 B AE1 N D AH0 N IH0 NG
+ABANDONMENT  AH0 B AE1 N D AH0 N M AH0 N T
+ABANDONMENTS  AH0 B AE1 N D AH0 N M AH0 N T S
+ABANDONS  AH0 B AE1 N D AH0 N Z
+ABANTO  AH0 B AE1 N T OW0
+ABARCA  AH0 B AA1 R K AH0
+ABARE  AA0 B AA1 R IY0
+ABASCAL  AE1 B AH0 S K AH0 L
+ABASH  AH0 B AE1 SH
+ABASHED  AH0 B AE1 SH T
+ABASIA  AH0 B EY1 ZH Y AH0
+ABATE  AH0 B EY1 T
+ABATED  AH0 B EY1 T IH0 D
+ABATEMENT  AH0 B EY1 T M AH0 N T
+ABATEMENTS  AH0 B EY1 T M AH0 N T S
+ABATES  AH0 B EY1 T S
+ABATING  AH0 B EY1 T IH0 NG
+ABBA  AE1 B AH0
+ABBADO  AH0 B AA1 D OW0
+ABBAS  AH0 B AA1 S
+ABBASI  AA0 B AA1 S IY0
+ABBATE  AA1 B EY0 T
+ABBATIELLO  AA0 B AA0 T IY0 EH1 L OW0
+ABBE  AE1 B IY0
+ABBE  AE0 B EY1
+ABBENHAUS  AE1 B AH0 N HH AW2 S
+ABBETT  AH0 B EH1 T
+ABBEVILLE  AE1 B V IH0 L
+ABBEY  AE1 B IY0
+ABBEY'S  AE1 B IY0 Z
+ABBIE  AE1 B IY0
+ABBITT  AE1 B IH0 T
+ABBOT  AE1 B AH0 T
+ABBOTT  AE1 B AH0 T
+ABBOTT'S  AE1 B AH0 T S
+ABBOUD  AH0 B UW1 D
+ABBOUD  AH0 B AW1 D
+ABBREVIATE  AH0 B R IY1 V IY0 EY2 T
+ABBREVIATED  AH0 B R IY1 V IY0 EY2 T IH0 D
+ABBREVIATES  AH0 B R IY1 V IY0 EY2 T S
+ABBREVIATING  AH0 B R IY1 V IY0 EY2 T IH0 NG
+ABBREVIATION  AH0 B R IY2 V IY0 EY1 SH AH0 N
+ABBREVIATIONS  AH0 B R IY2 V IY0 EY1 SH AH0 N Z
+ABBRUZZESE  AA0 B R UW0 T S EY1 Z IY0
+ABBS  AE1 B Z
+ABBY  AE1 B IY0
+ABC  EY1 B IY2 S IY2
+ABC'S  EY1 B IY2 S IY2 Z
+ABCO  AE1 B K OW0
+ABCOTEK  AE1 B K OW0 T EH2 K
+ABCS  EY1 B IY2 S IY2 Z
+ABDALLA  AE2 B D AE1 L AH0
+ABDALLAH  AE2 B D AE1 L AH0
+ABDEL  AE1 B D EH2 L
+ABDELLA  AE2 B D EH1 L AH0
+ABDICATE  AE1 B D AH0 K EY2 T
+ABDICATED  AE1 B D AH0 K EY2 T AH0 D
+ABDICATES  AE1 B D AH0 K EY2 T S
+ABDICATING  AE1 B D IH0 K EY2 T IH0 NG
+ABDICATION  AE2 B D IH0 K EY1 SH AH0 N
+ABDNOR  AE1 B D N ER0
+ABDO  AE1 B D OW0
+ABDOLLAH  AE2 B D AA1 L AH0
+ABDOMEN  AE0 B D OW1 M AH0 N
+ABDOMEN  AE1 B D AH0 M AH0 N
+ABDOMINAL  AE0 B D AA1 M AH0 N AH0 L
+ABDOMINAL  AH0 B D AA1 M AH0 N AH0 L
+ABDUCT  AE0 B D AH1 K T
+ABDUCTED  AE0 B D AH1 K T IH0 D
+ABDUCTED  AH0 B D AH1 K T IH0 D
+ABDUCTEE  AE0 B D AH2 K T IY1
+ABDUCTEES  AE0 B D AH2 K T IY1 Z
+ABDUCTING  AE0 B D AH1 K T IH0 NG
+ABDUCTING  AH0 B D AH1 K T IH0 NG
+ABDUCTION  AE0 B D AH1 K SH AH0 N
+ABDUCTION  AH0 B D AH1 K SH AH0 N
+ABDUCTIONS  AE0 B D AH1 K SH AH0 N Z
+ABDUCTIONS  AH0 B D AH1 K SH AH0 N Z
+ABDUCTOR  AE0 B D AH1 K T ER0
+ABDUCTOR  AH0 B D AH1 K T ER0
+ABDUCTORS  AE0 B D AH1 K T ER0 Z
+ABDUCTORS  AH0 B D AH1 K T ER0 Z
+ABDUCTS  AE0 B D AH1 K T S
+ABDUL  AE0 B D UW1 L
+ABDULAZIZ  AE0 B D UW2 L AH0 Z IY1 Z
+ABDULLA  AA0 B D UW1 L AH0
+ABDULLAH  AE2 B D AH1 L AH0
+ABE  EY1 B
+ABED  AH0 B EH1 D
+ABEDI  AH0 B EH1 D IY0
+ABEE  AH0 B IY1
+ABEL  EY1 B AH0 L
+ABELA  AA0 B EH1 L AH0
+ABELARD  AE1 B IH0 L ER0 D
+ABELE  AH0 B EH1 L
+ABELES  AH0 B EH1 L Z
+ABELES  EY1 B AH0 L IY2 Z
+ABELL  EY1 B AH0 L
+ABELLA  AH0 B EH1 L AH0
+ABELN  AE1 B IH0 L N
+ABELOW  AE1 B AH0 L OW0
+ABELS  EY1 B AH0 L Z
+ABELSON  AE1 B IH0 L S AH0 N
+ABEND  AE1 B EH0 N D
+ABEND  AH0 B EH1 N D
+ABENDROTH  AE1 B IH0 N D R AO0 TH
+ABER  EY1 B ER0
+ABERCROMBIE  AE2 B ER0 K R AA1 M B IY0
+ABERDEEN  AE1 B ER0 D IY2 N
+ABERFORD  EY1 B ER0 F ER0 D
+ABERG  AE1 B ER0 G
+ABERLE  AE1 B ER0 AH0 L
+ABERLE  AE1 B ER0 L
+ABERMIN  AE1 B ER0 M IH0 N
+ABERNATHY  AE1 B ER0 N AE2 TH IY0
+ABERNETHY  AE1 B ER0 N EH2 TH IY0
+ABERRANT  AE0 B EH1 R AH0 N T
+ABERRATION  AE2 B ER0 EY1 SH AH0 N
+ABERRATIONAL  AE2 B ER0 EY1 SH AH0 N AH0 L
+ABERRATIONS  AE2 B ER0 EY1 SH AH0 N Z
+ABERT  AE1 B ER0 T
+ABET  AH0 B EH1 T
+ABETTED  AH0 B EH1 T IH0 D
+ABETTING  AH0 B EH1 T IH0 NG
+ABEX  EY1 B EH0 K S
+ABEYANCE  AH0 B EY1 AH0 N S
+ABEYTA  AA0 B EY1 T AH0
+ABHOR  AE0 B HH AO1 R
+ABHORRED  AH0 B HH AO1 R D
+ABHORRENCE  AH0 B HH AO1 R AH0 N S
+ABHORRENT  AE0 B HH AO1 R AH0 N T
+ABHORS  AH0 B HH AO1 R Z
+ABIAM  EY1 B IY0 AH0 M
+ABIAM'S  EY1 B IY0 AH0 M Z
+ABID  EY1 B IH0 D
+ABIDE  AH0 B AY1 D
+ABIDED  AH0 B AY1 D IH0 D
+ABIDES  AH0 B AY1 D Z
+ABIDING  AH0 B AY1 D IH0 NG
+ABIDJAN  AE0 B IH0 JH AA1 N
+ABIE  AE1 B IY0
+[...3624638 additional characters not shown...]</textarea></div>
+            
+            <h2>Output:</h2>
+    <table class="diff" id="difflib_chg_to5__top"
+           cellspacing="0" cellpadding="0" rules="groups" >
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <thead><tr><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a3/rhymes-expected-06.txt'>test-a3/rhymes-expected-06.txt</a></th><th class="diff_next"><br /></th><th colspan="2" class="diff_header"><a href='test-a3/rhymes-actual-06.txt'>test-a3/rhymes-actual-06.txt</a></th></tr></thead>
+        <tbody>
+            <tr><td class="diff_next"><a href="#difflib_chg_to5__top">t</a></td><td class="diff_header" id="from5_1">1</td><td nowrap="nowrap">ACER</td><td class="diff_next"><a href="#difflib_chg_to5__top">t</a></td><td class="diff_header" id="to5_1">1</td><td nowrap="nowrap">ACER</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from5_2">2</td><td nowrap="nowrap">ACER</td><td class="diff_next"></td><td class="diff_header" id="to5_2">2</td><td nowrap="nowrap">ACER</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from5_3">3</td><td nowrap="nowrap">BASER</td><td class="diff_next"></td><td class="diff_header" id="to5_3">3</td><td nowrap="nowrap">BASER</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from5_4">4</td><td nowrap="nowrap">BASER</td><td class="diff_next"></td><td class="diff_header" id="to5_4">4</td><td nowrap="nowrap">BASER</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from5_5">5</td><td nowrap="nowrap">CHASER</td><td class="diff_next"></td><td class="diff_header" id="to5_5">5</td><td nowrap="nowrap">CHASER</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from5_6">6</td><td nowrap="nowrap">CHASER</td><td class="diff_next"></td><td class="diff_header" id="to5_6">6</td><td nowrap="nowrap">CHASER</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from5_7">7</td><td nowrap="nowrap">FACER</td><td class="diff_next"></td><td class="diff_header" id="to5_7">7</td><td nowrap="nowrap">FACER</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from5_8">8</td><td nowrap="nowrap">FACER</td><td class="diff_next"></td><td class="diff_header" id="to5_8">8</td><td nowrap="nowrap">FACER</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from5_9">9</td><td nowrap="nowrap">KACER</td><td class="diff_next"></td><td class="diff_header" id="to5_9">9</td><td nowrap="nowrap">KACER</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from5_10">10</td><td nowrap="nowrap">KACER</td><td class="diff_next"></td><td class="diff_header" id="to5_10">10</td><td nowrap="nowrap">KACER</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from5_11">11</td><td nowrap="nowrap">LACER</td><td class="diff_next"></td><td class="diff_header" id="to5_11">11</td><td nowrap="nowrap">LACER</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from5_12">12</td><td nowrap="nowrap">LACER</td><td class="diff_next"></td><td class="diff_header" id="to5_12">12</td><td nowrap="nowrap">LACER</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from5_13">13</td><td nowrap="nowrap">PACER</td><td class="diff_next"></td><td class="diff_header" id="to5_13">13</td><td nowrap="nowrap">PACER</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from5_14">14</td><td nowrap="nowrap">PACER</td><td class="diff_next"></td><td class="diff_header" id="to5_14">14</td><td nowrap="nowrap">PACER</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from5_15">15</td><td nowrap="nowrap">PLACER</td><td class="diff_next"></td><td class="diff_header" id="to5_15">15</td><td nowrap="nowrap">PLACER</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from5_16">16</td><td nowrap="nowrap">PLACER</td><td class="diff_next"></td><td class="diff_header" id="to5_16">16</td><td nowrap="nowrap">PLACER</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from5_17">17</td><td nowrap="nowrap">SPACER</td><td class="diff_next"></td><td class="diff_header" id="to5_17">17</td><td nowrap="nowrap">SPACER</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from5_18">18</td><td nowrap="nowrap">SPACER</td><td class="diff_next"></td><td class="diff_header" id="to5_18">18</td><td nowrap="nowrap">SPACER</td></tr>
+        </tbody>
+    </table></div><br><br><table class="diff" summary="Legends"> <tr> <th colspan="2"> Legends </th> </tr> <tr> <td> <table border="" summary="Colors"> <tr><th> Colors </th> </tr> <tr><td class="diff_add">&nbsp;Added&nbsp;</td></tr> <tr><td class="diff_chg">Changed</td> </tr> <tr><td class="diff_sub">Deleted</td> </tr> </table></td> <td> <table border="" summary="Links"> <tr><th colspan="2"> Links </th> </tr> <tr><td>(f)irst change</td> </tr> <tr><td>(n)ext change</td> </tr> <tr><td>(t)op</td> </tr> </table></td> </tr> </table><br><br><div class=disclaimer><b>NOTE:</b> This tester gives you an automated way to confirm that your programs are producing the expected output for the examples shown in the assignment specifications, including error cases. <u>Passing the test cases does not guarantee any particular grade: additional and/or different test cases will be included when grading.</u></div>
